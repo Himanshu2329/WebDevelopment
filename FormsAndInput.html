@@ -7,8 +7,36 @@
 </head>
 <body>
     <form action="">
-        <label for="text">Name:</label>
-        <input type="text" placeholder="type your name">
+        <div>
+            <label for="text">Name:</label>
+            <input type="text" placeholder="type your name" required autofocus pattern="[a-zA-Z/]">
+        </div>
+            
+        <br>
+        <input type="radio" value="Male" name="Radio">
+        <label for="Male">Male</label>
+        <input type="radio" value="feMale" name="Radio">
+        <label for="feMale">Female</label>
+        <div>
+            
+            <label for="checkbox">Please tick this</label>
+            <input type="checkbox" name="CheckboxGroup" value="checkbox">
+        </div>
+
+        <div>
+            <label for="Address">Address</label>
+            <br>
+            <textarea name="Address" id="tex"  rows="10" cols="30" placeholder="Please enter you" required autofocus></textarea>
+        </div>
+
+        <div><label for="Fruits">select you favouite fruit:</label>
+            <select name="Fruits" id="">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Orange">Orange</option>
+                <option value="Grapes">Grapes</option>
+            </select>
+        </div>
     </form>
 </body>
 </html>
