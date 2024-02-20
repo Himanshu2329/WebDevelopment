@@ -6,6 +6,10 @@
     <title>CSS Selector</title>
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
     .red{
         background-color: red;
     }
@@ -20,6 +24,21 @@
         color: brown;
         background-color: pink;
     }
+
+    /* Pseudo Selectors */
+    a:visited{
+        color: cyan;
+    }
+    a:hover{
+        color: red;
+    }
+    a:active{
+        background-color: rgb(250, 36, 72);
+    }
+    li:nth-child(even){
+        color: rgb(38, 0, 255);
+    }
+    
 </style>
 <body>
     <div class="red">
@@ -34,5 +53,20 @@
             <p>Hello i'm paragraph</p>
         </article>
     </div>
+    <div class="selector">
+        
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+        </ol>
+    </div>
+    <a href="https://www.google.com" target="_blank">Go to Google</a>
+    <a href="https://www.facebook.com" target="_blank">Go to Facebook</a>
 </body>
 </html>
